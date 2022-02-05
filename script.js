@@ -5,13 +5,15 @@ btnSearch.addEventListener('click', fun);
 
 function fun(){
     console.log('fun');
-    let URL = "https://api.unsplash.com/photos/?client_id=AIzaSyDstObYyeOlUTdBdrSC-5kyzhvpw9Mg2tU" + picture.value;
+    let URL = "https://api.unsplash.com/search/photos/?client_id=mCNSmbR8Wp7wDFrzZrI8c-EhAR7ZfM3mxGhNR_EOjFA&query=" + picture.value;
 
     fetch(URL).then((response)=>{
-        return response.json();}
+        return response.json();
+    }
     )
     .then((data)=>{
-        return console.log(data);}
+        console.log(data.results[0].links.html);
+    }
     ).catch(arg=>{
         console.log(arg);
     })
