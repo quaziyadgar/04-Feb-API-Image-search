@@ -58,8 +58,8 @@ body{
     padding: 10px;
     cursor: pointer;
 }
-.image-view:{
+.image-view::selection{
     position: fixed;
     width: 80%;
-
+    top: 50px
 }

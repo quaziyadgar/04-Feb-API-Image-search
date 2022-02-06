@@ -25,7 +25,7 @@ function getData(data) {
     {
         let image = document.createElement('img');
         image.src = data.results[i].urls.small;
-        image.onclick = "displayImage(${image.src});";
+        image.className = 'image-view';
         app.appendChild(image);
         // console.log(image);
     }
