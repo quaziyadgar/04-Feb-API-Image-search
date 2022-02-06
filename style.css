@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
 }
 #picture{
@@ -46,10 +46,20 @@ body{
     border-radius: 20px;
     margin-bottom: 10px;
 }
-.app{
+#app{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 30px;
+    justify-content: center;
+    /* margin: 30px; */
+}
+#app img{
+    height: 300px;
+    padding: 10px;
+    cursor: pointer;
+}
+.image-view:{
+    position: fixed;
+    width: 80%;
+
 }
